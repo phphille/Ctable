@@ -1,5 +1,5 @@
 {
-    "name": "phpe/html-table",
+    "name": "phpe/ctable",
     "type": "library",
     "description": "Class for HTML table",
     "keywords": ["html", "table"],

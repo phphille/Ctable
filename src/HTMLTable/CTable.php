@@ -21,7 +21,7 @@ class CTable {
     /**
    Creates a table based on the recieved array and style with the class name from stylesheet.
     */
-    public function getTable($array, $class){
+    public function getTable($array, $class = ""){
 
     $html = "<table class='{$class}'>
     <tr class='{$class}'>";
@@ -62,11 +62,11 @@ class CTable {
      /**
     Sets the table headings if one wish to not use, if the exists, in the array given in the getTable()
     */
-    public function setTableHeading($array){
+    public function setTableHeading($array, $class = ""){
 
         $this->tableHeading = "";
         foreach($array as $val){
-            $this->tableHeading .= "<th>{$val}</th>";
+            $this->tableHeading .= "<th class='{$class}'>{$val}</th>";
         }
 
     }

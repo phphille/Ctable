@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1425032385">
-  <project timestamp="1425032385">
+<coverage generated="1425033315">
+  <project timestamp="1425033315">
     <file name="/Applications/MAMP/htdocs/composer-moduler/CTable/autoloader.php">
       <line num="18" type="stmt" count="1"/>
       <line num="21" type="stmt" count="1"/>

@@ -19,6 +19,21 @@ To get the html table:
 
 $table = $ctable->getTable('array with values', 'css class name');
 
+
+# Using anax-mvc
+
+Make it apart of $Di like:
+
+$di->setShared('ctable', function() {
+  $ctable = new \phpe\HTMLTable\CTable();
+  return $ctable;
+});
+
+Then can you, depenending where in the code you want to reach CTable, reach the class whit either $app or $di;
+$app->ctable->getTable($anArray, 'cssClass');
+or
+$this->di->ctable->getTable($anArray, 'cssClass');
+
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/phphille/Ctable/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/phphille/Ctable/?branch=master)
 [![Code Coverage](https://scrutinizer-ci.com/g/phphille/Ctable/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/phphille/Ctable/?branch=master)
 [![Build Status](https://scrutinizer-ci.com/g/phphille/Ctable/badges/build.png?b=master)](https://scrutinizer-ci.com/g/phphille/Ctable/build-status/master)
